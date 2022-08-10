@@ -9,6 +9,9 @@ use Illuminate\Support\Encryption\DecryptException;
 
 use App\Utilities\SiteHelper;
 
+use App\Mail\RegisterMailable;
+use Illuminate\Support\Facades\Mail;
+
 
 class UserController extends Controller
 {
@@ -41,6 +44,11 @@ class UserController extends Controller
             'created_at' => $date,
             'updated_at' => $date,
         ]);
+
+
+        $correo = new RegisterMailable();
+
+        Mail::to('angeltraviesoc@gmail.com')->send($correo);
 
 
         return view('users.added_user');

@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ver Usuario</title>
+    <title>Document</title>
+
+    <style>
+        h1 {
+            color: rgb(145, 204, 145);
+        }
+    </style>
+
 </head>
 <body>
-    <p style="color: green">Registro completado</p>
+    <h1>Registro completado</h1>
 
-    <p>Se ha enviado un email para verificar su cuenta</p>
+    <p>Su registro ha sido completado</p>
 
-    <a href="/">Ir a Inicio</a>
-    <a href="/listar_usuarios">Ver Usuarios</a>
 </body>
 </html>

@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Mail\RegisterMailable;
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// CRUD
 Route::get('/', 'UserController@index');
 Route::post('/agregar_usuario', 'UserController@add_user');
 Route::get('/listar_usuarios', 'UserController@get_users');
